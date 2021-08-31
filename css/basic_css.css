@@ -1,0 +1,47 @@
+body{
+    background-color: aquamarine;
+}
+p{
+    color: blue;
+    text-indent: 60px;
+}
+#sachin_career{
+    /*user defined*/
+    color: red;
+    text-indent: 30px;
+}
+#sachin_school_life{
+    /*user defined*/
+    color:green;
+    text-indent: 50px;
+}
+#common_alignment{
+
+    font-size: 20px;
+}
+
+.sachin_text{
+    font-size: 20px;
+}
+
+.sachin_text_color{
+    color: brown;
+}
+
+.sachin_world_cup
+{
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.captaincy{
+    border: 5px solid blue;
+     /*solid, dotted, dashed, inset, outset, double, none*/
+    /* 
+        border-width: 5px;
+        border-style: solid; 
+        border-color: green; 
+    */
+    border-left: 8px solid red; /* left, right, bottom, top*/
+    border-top: 4px dashed blue;
+    color: brown;
+}

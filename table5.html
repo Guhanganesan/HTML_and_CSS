@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<style>
+    table{
+         /* border:5px solid rgb(82, 82, 197); */
+         border-collapse: collapse;
+         }
+    th, td{
+           border: 1px solid blue; 
+           width:100px;
+           height: 60px;
+           vertical-align:middle; 
+           /*top, bottom, middle*/
+           text-align:center; /*left, right, center*/
+           }
+    th{
+        background-color: green;
+        color: white;
+    }
+    td{
+        /* background-color: pink; */
+        color: blue;
+        
+    }
+    #un_use{
+        background-color:red
+    }
+    
+    thead{background-color:green;}
+    
+    tr:nth-child(odd){background-color:pink;}
+    tr:nth-child(3){background-color:red;}
+    
+    
+    tr:nth-child(even){background-color:violet;}
+    tr:nth-child(4){background-color:yellow;}
+     
+    /*over-ride*/
+   
+</style>
+<body>
+    <table>
+        
+           <thead>
+                <tr>
+                    <th>Sl.No</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Mark1</th>
+                    <th>Mark2</th>
+                </tr>
+           </thead>
+        
+           <tbody>
+           		<tr>
+                    <td>1</td>
+                    <td>Pragalathan</td>
+                    <td>23</td>
+                    <td>65</td>
+                    <td>65</td>
+                  </tr>
+                  <tr>
+                      <td>2</td>
+                      <td>Hareesh</td>
+                      <td>23</td>
+                      <td>75</td>
+                      <td>85</td>
+                  </tr>
+                  <tr>
+                      <td>3</td>
+                      <td>Raja</td>
+                      <td>24</td>
+                      <td>95</td>
+                      <td>85</td>
+                  </tr>
+                  <tr>
+                      <td>4</td>
+                      <td>Anbu</td>
+                      <td>26</td>
+                      <td>75</td>
+                      <td>90</td>
+                  </tr>
+           </tbody>
+        <tfoot>
+            <tr>
+                <td colspan=3>Total</td>
+                <td>310</td>
+                <td>325</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
