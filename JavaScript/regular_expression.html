@@ -1,0 +1,77 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <h2>Forms Related</h2>
+        Name:  <input> <br><br> <!-- value -->
+        Email: <input> <br><br>
+        Password:   <input> <br><br>
+        Mobile: <input> <br><br>
+        <button onclick="submit()">submit</button><br>
+              
+    <script>
+
+        function submit(){
+                
+                alpha=/^[A-Za-z]+$/;
+                number=/^([0-9]{10})+$/;
+                email=/^([a-z]+@[a-z]+\.[a-z]{2,6})+$/;
+                password=/^((?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%^&*!]).{5,})+$/;
+                pattern = /^([a-zA-Z_])+\@([a-z])+\.([a-z])+/;
+                pattern1=/^([A-Za-z0-9])+\@+\#+/;
+
+                
+                var form_list = document.getElementsByTagName("input");
+                // Empty form_list[0].value == "" or Non-Empty form_list[0].value != ""
+                if(form_list[0].value == ""){
+                    alert("Please Enter Your Name!!");
+                    return false;
+                }
+                else{
+                    if(!alpha.test(form_list[0].value)){
+                        alert("Name should contains alphabets only!!!");
+                        return false;
+                    }
+                }
+                
+                
+                if(form_list[1].value == ""){
+                    alert("Please Enter Your Email!!");
+                    return false;
+                }else{
+                    // Validation using Regex
+                    if(!email.test(form_list[1].value)){
+                        alert("Email should be in the format ...@gamil.com ");
+                        return false;
+                    }
+                }
+
+                if(form_list[2].value == ""){
+                    alert("Please Enter Your Password!!");
+                    return false;
+                }else{
+                    if(!password.test(form_list[2].value)){
+                        alert("Password should contains Alpha Numeric with Special Characters...");
+                        return false;
+                    }
+                }
+                
+                if(form_list[3].value == ""){
+                    alert("Please Enter Your Mobile Number!!");
+                    return false;
+                }else{
+                    if(!number.test(form_list[3].value)){
+                        alert("Mobile number should contains 10 digits");
+                        return false;
+                    }
+                }
+        }
+        
+    </script>
+</body>
+</html>

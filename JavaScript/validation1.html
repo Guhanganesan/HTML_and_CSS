@@ -1,0 +1,41 @@
+<!<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+        <h2>Forms Related</h2>
+        Name:  <input> <br><br> <!-- value -->
+        Email: <input> <br><br>
+        Age:   <input> <br><br>
+        Mobile: <input> <br><br>
+        <button onclick="submit()">submit</button><br>
+              
+    <script>
+
+        function submit(){
+                var form_list = document.getElementsByTagName("input");
+                if(form_list[0].value == ""){
+                    alert("Please Enter Your Name!!");
+                    return false;
+                }
+                else if(form_list[1].value == ""){
+                    alert("Please Enter Your Email!!");
+                    return false;
+                }
+                else if(form_list[2].value == ""){
+                    alert("Please Enter Your Age!!");
+                    return false;
+                }
+                else if(form_list[3].value == ""){
+                    alert("Please Enter Your Mobile Number!!");
+                    return false;
+                }
+        }
+        
+    </script>
+</body>
+</html>

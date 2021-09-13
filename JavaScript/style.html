@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<style>
+.ex{
+    color: white;
+    width: 120px;
+    height: 40px;
+    background-color: green;
+}
+</style>
+<body>
+   
+   <h2 id="example"> Hello.. </h2>
+
+   <button onclick="test()">click</button>
+
+   <button onclick="apply()">apply</button>
+
+    <script>
+
+       function test(){
+          document.getElementById("example").style.color = "red";
+          document.getElementById("example").style.backgroundColor = "blue";
+          // backgroud-color - wrong
+          // backgroundColor => camelcase 
+        }
+
+       function apply(){
+          document.getElementById("example").className = "ex";
+        }
+        
+    </script>
+    
+</body>
+</html>

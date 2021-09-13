@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+</head>
+<body>
+    <h2 id="example">Hey!</h2>
+
+    <button onclick="changeText()">click</button>
+
+    <button onclick="callAlert()">alert</button>
+
+    <button onclick="changeNames()">change name</button>
+
+    <p>Ganesan</p>
+    <p>Guhan</p>
+    <p>Muthu</p>
+    <p>Pragalathan</p>
+    <p>Harish</p>
+
+    <h2>Forms Related</h2>
+    Name: <input id="i1"> <br><br>
+    Email: <input id="i2"> <br><br>
+          <button onclick="display()">display</button><br>
+
+          <p id="p1"> </p>
+          <p id="p2"> </p>
+
+
+
+    <!-- <script src="../js/dom.js"></script> -->
+    <script>
+        //document.write("Welcome");
+        // var name = document.getElementById("example").innerHTML;
+        // document.write(name);
+        // name = "Ganesan";
+        //document.write(name);
+        // document.getElementById("example").innerHTML = name;
+       function changeText(){
+            document.getElementById("example").innerHTML = "Welcome!";
+        }
+
+        function callAlert(){
+            alert("Hey Dont Click This.............");
+        }
+
+       //------------------------------------------------------
+       /* Get Elements By Tag Name => p, h2, li, input */
+    
+       function changeNames(){
+        var list = document.getElementsByTagName("p");
+        // ["Ganesan","Guhan", "Muthu", "Pragalathan", "Haris"]
+        console.log(list[0]);
+        console.log(list[1]);
+        console.log(list[0].innerHTML);
+        console.log(list[1].innerHTML);
+        list[0].innerHTML = "Rajadurai";
+        list[1].innerHTML = "Vimal";
+        list[2].innerHTML = "Kannan";
+        list[3].innerHTML = "Anbu";
+       }
+
+
+       
+      function display(){
+        var name = document.getElementById("i1").value;
+        var email = document.getElementById("i2").value;
+        console.log(name);
+        console.log(email);
+
+        document.getElementById("p1").innerHTML = name;
+        document.getElementById("p2").innerHTML = email;
+      }
+      
+
+       
+    </script>
+</body>
+</html>
